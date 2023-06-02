@@ -5,7 +5,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Service</title>
     <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Place favicon.ico in the root directory -->
     <link
@@ -32,8 +32,8 @@
     <link rel="stylesheet" href="assets/css/circularProgressBar.css" />
     <link rel="stylesheet" href="assets/css/spacing.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/style-dialogika.css" />
+    <!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
+    <!-- <link rel="stylesheet" href="assets/css/style-dialogika.css" /> -->
   </head>
 
   <body>
@@ -86,6 +86,30 @@
     <!-- ======= Top Bar, Header, Side Bar ======= -->
     <main-header></main-header>
     <!-- ======= Top Bar, Header, Side Bar ======= -->
+    <script>
+      /**
+       * Toggle .header-scrolled class to #header when page is scrolled
+       */
+      let selectHeader = select("#header");
+      let selectTopbar = select("#topbar");
+      if (selectHeader) {
+        const headerScrolled = () => {
+          if (window.scrollY > 100) {
+            selectHeader.classList.add("header-scrolled");
+            if (selectTopbar) {
+              selectTopbar.classList.add("topbar-scrolled");
+            }
+          } else {
+            selectHeader.classList.remove("header-scrolled");
+            if (selectTopbar) {
+              selectTopbar.classList.remove("topbar-scrolled");
+            }
+          }
+        };
+        window.addEventListener("load", headerScrolled);
+        onscroll(document, headerScrolled);
+      }
+    </script>
     <!-- ======= Sidebar Mobile ======= -->
     <div
       class="offcanvas offcanvas-start d-block d-sm-none"
@@ -1613,7 +1637,7 @@
 
     <!-- JS here -->
     <script src="assets/js/component/headerfooter.js"></script>
-    <script src="assets/js/dialogika.js"></script>
+    <!-- <script src="assets/js/dialogika.js"></script> -->
     <script src="assets/js/vendor/jquery.js"></script>
     <script src="assets/js/vendor/waypoints.js"></script>
     <script src="assets/js/bootstrap-bundle.js"></script>
@@ -1636,7 +1660,7 @@
     <script src="assets/js/main.js"></script>
 
     <script>
-      on("click", ".mobile-nav-toggle", function (e) {
+      $(".mobile-nav-toggle").on("click", function (e) {
         $("#sidebar-mobile").offcanvas("show");
       });
     </script>

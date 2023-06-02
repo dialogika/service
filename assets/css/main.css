@@ -3688,6 +3688,7 @@ div.demo img {
 --------------------------------------------------------------*/
 #footer {
   color: #fff; /*#444444*/
+  width: 100vw;
   font-size: 14px;
   background: linear-gradient(
     90deg,
