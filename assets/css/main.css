@@ -593,7 +593,6 @@ input[type=color] {
 
 .p-relative {
   position: relative;
-  margin-top: 120px;
 }
 
 .p-absolute {
@@ -2357,6 +2356,7 @@ div.demo img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  margin-top: 120px;
 }
 .breadcrumb-style .breadcrumb__list span {
   font-weight: 600;
