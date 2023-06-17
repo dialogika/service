@@ -14149,3 +14149,7 @@ border-radius:50%;
 background-color:#ffb13b;
 color: #231F20;
 }
+
+.tp-counter-content{
+  background: transparent;
+}
