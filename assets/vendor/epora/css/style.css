@@ -358,6 +358,8 @@ img {
 
 .p-relative {
   position: relative;
+  border-radius: 8px;
+  box-shadow: #7204cf;
 }
 
 .p-absolute {
