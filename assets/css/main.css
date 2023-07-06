@@ -4084,6 +4084,7 @@ div.demo img {
 }
 .tp-about-thumb img {
   max-width: 100%;
+  border-radius: 8px;
 }
 @media (max-width: 575px) {
   .tp-about-thumb img {
