@@ -6291,7 +6291,7 @@ div.demo img {
   transition: all 0.3s ease-in-out;
 }
 .tp-service-item-btn a {
-  background: #0B2B6A;
+  background: var(--tp-theme-primary);
   width: 50px;
   height: 50px;
   display: inline-block;
@@ -6316,8 +6316,8 @@ div.demo img {
   color: #CFD3E4;
 }
 .tp-service-item:hover .tp-service-item-btn a {
-  background: var(--tp-theme-secondary);
-  color: var(--tp-text-2);
+  background: #0B2B6A ;
+  color: orange;
 }
 .tp-service-item:hover .tp-service-item-btn a i {
   transform: rotate(45deg);
