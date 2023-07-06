@@ -6318,6 +6318,7 @@ div.demo img {
 }
 .tp-service-item:hover {
   background-color: var(--tp-theme-primary);
+  box-shadow: #7204cf 0px 5px 15px;
 }
 .tp-service-item:hover .item-shape {
   opacity: 0.15;
@@ -7462,6 +7463,10 @@ div.demo img {
   .portfolio-active .splide__track {
     padding-top: 50px;
   }
+}
+
+.splide__track{
+  padding: 30px 0px 30px 0px;
 }
 
 .my-slider-progress {
