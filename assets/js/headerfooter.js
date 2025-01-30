@@ -126,7 +126,7 @@ class Header extends HTMLElement {
                           <a href="../program/kids-play.html"><div class="card card-body">Kids Play</div></a>
                           <a href="../program/kids-class.html"><div class="card card-body">
                             <div class="justify-content-between d-flex">
-                              <span>Kids Plus </span>
+                              <span>Kids Class </span>
                               <span class="badge bg-info rounded-pill">Best Buy</span>
                             </div>
                           </div></a>
